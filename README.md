@@ -1,26 +1,27 @@
 txt2img (山寨长微博)
 ====================
 
-Contributors: Leo Deng (@米粽my)
-Plugin URI: http://forcefront.com/txt2img-plugin/
-Tags: txt2img, weibo
-Requires at least: 2.7.0
-Tested up to: 3.4.1
-Stable tag: 1.0.8
-Author URI: http://forcefront.com/
-Donate link: http://me.alipay.com/myst
+Contributors: Leo Deng ([@米粽my](http://weibo.com/myst729))  
+Plugin URI: http://forcefront.com/txt2img-plugin/  
+Tags: txt2img, weibo  
+Requires at least: 2.7.0  
+Tested up to: 3.4.2  
+Stable tag: 1.0.8  
+Author URI: http://forcefront.com/  
+Donate link: http://me.alipay.com/myst  
 License: GPLv2 or later
 
 Convert WordPress post/page into image and share on Weibo.
 
 
-== Description ==
+###Description###
 
 Convert WordPress post/page into image and share on [Weibo](http://weibo.com/).
+
 把 WordPress 文章/页面转成图片发送到[新浪微博](http://weibo.com/)。
 
 
-== Installation ==
+###Installation###
 
 1. Upload the plugin to your `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
@@ -29,31 +30,34 @@ Convert WordPress post/page into image and share on [Weibo](http://weibo.com/).
 上传插件到您的 WordPress 插件目录，登录后台激活即可。进入文章编辑界面，如果当前文章的发布状态是“公开发布”，您就会在右侧看到分享长微博的选项。
 
 
-== Frequently Asked Questions ==
+###Frequently Asked Questions###
 
 Looking forward to your questions.
+
 期待您的提问。
 
 
-== Known issues ==
+###Known issues###
 
 If your WordPress is running on a Windows Server, the font file will be locked once you start using this plugin, until the server reboots. This may cause plugin auto-updating fail. The issue couldn't be solved due to Windows system design. Please update it manually, or try a *nix server.
+
 如果您在 Windows 服务器上运行 WordPress，使用本插件会造成字体文件被锁死，直到服务器重启。这将可能造成插件自动更新失败。由于 Windows 系统设计的原因，该问题无法修复，请手动更新该插件，或考虑更换 *nix 架构的服务器。
 
 
-== Donation ==
+###Donation###
 
 If you like this plugin and want to thank its developer, you may consider make a donation via [AliPay](https://me.alipay.com/myst).
+
 如果您觉得这个插件还不错，想对开发者表示感谢，可以考虑通过[支付宝个人收款页](https://me.alipay.com/myst)打赏开发者一点儿银子。
 
 
-== Screenshots ==
+###Screenshots###
 
 1. Share to weibo while editing published post/page.
 2. Preview the image generated from the post.
 
 
-== Changelog ==
+###Changelog###
 
 = 1.0.8 (2012-09-07) =
 * 修正使用可视化编辑器时生成的图片丢失段落间隔行的问题
@@ -87,7 +91,7 @@ If you like this plugin and want to thank its developer, you may consider make a
 * 发布第一个版本
 
 
-== Upgrade Notice ==
+###Upgrade Notice###
 
 = 1.0.8 =
 修正使用可视化编辑器时生成的图片丢失段落间隔行的问题
