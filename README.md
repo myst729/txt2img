@@ -5,7 +5,7 @@ Contributors: Leo Deng ([@米粽my](http://weibo.com/myst729))
 Plugin URI: http://forcefront.com/txt2img-plugin/  
 Tags: txt2img, weibo  
 Requires at least: 2.7.0  
-Tested up to: 3.4.1  
+Tested up to: 3.4.2  
 Stable tag: 1.0.8  
 Author URI: http://forcefront.com/  
 Donate link: http://me.alipay.com/myst  
