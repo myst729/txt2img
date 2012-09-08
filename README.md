@@ -1,4 +1,5 @@
-=== txt2img (山寨长微博) ===
+txt2img (山寨长微博)
+====================
 
 Contributors: Leo Deng (@米粽my)
 Plugin URI: http://forcefront.com/txt2img-plugin/
@@ -15,9 +16,8 @@ Convert WordPress post/page into image and share on Weibo.
 
 == Description ==
 
-Convert WordPress post/page into image and share on <a href="http://weibo.com/">Weibo</a>.
-
-把 WordPress 文章/页面转成图片发送到<a href="http://weibo.com/">新浪微博</a>。
+Convert WordPress post/page into image and share on [Weibo](http://weibo.com/).
+把 WordPress 文章/页面转成图片发送到[新浪微博](http://weibo.com/)。
 
 
 == Installation ==
@@ -32,22 +32,19 @@ Convert WordPress post/page into image and share on <a href="http://weibo.com/">
 == Frequently Asked Questions ==
 
 Looking forward to your questions.
-
 期待您的提问。
 
 
 == Known issues ==
 
 If your WordPress is running on a Windows Server, the font file will be locked once you start using this plugin, until the server reboots. This may cause plugin auto-updating fail. The issue couldn't be solved due to Windows system design. Please update it manually, or try a *nix server.
-
 如果您在 Windows 服务器上运行 WordPress，使用本插件会造成字体文件被锁死，直到服务器重启。这将可能造成插件自动更新失败。由于 Windows 系统设计的原因，该问题无法修复，请手动更新该插件，或考虑更换 *nix 架构的服务器。
 
 
 == Donation ==
 
-If you like this plugin and want to thank its developer, you may consider make a donation via <a href="https://me.alipay.com/myst">AliPay</a>.
-
-如果您觉得这个插件还不错，想对开发者表示感谢，可以考虑通过<a href="https://me.alipay.com/myst">支付宝个人收款页</a>打赏开发者一点儿银子。
+If you like this plugin and want to thank its developer, you may consider make a donation via [AliPay](https://me.alipay.com/myst).
+如果您觉得这个插件还不错，想对开发者表示感谢，可以考虑通过[支付宝个人收款页](https://me.alipay.com/myst)打赏开发者一点儿银子。
 
 
 == Screenshots ==
