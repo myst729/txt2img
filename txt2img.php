@@ -3,44 +3,52 @@
 Plugin Name: txt2img (山寨长微博)
 Plugin URI: http://forcefront.com/txt2img-plugin/
 Description: Convert WordPress post/page into image and share on <a href="http://weibo.com/">Weibo</a>. 把 WordPress 文章转发成新浪长微博。
-Version: 1.0.8
+Version: 1.1.0
 Author: Leo Deng (@米粽my)
 Author URI: http://forcefront.com/
 License: GPLv2 or later
 */
 
 
-function txt2img_custom_box() {
-    echo '<p id="txt2img_buttons">';
-    echo '<a href="#" id="txt2img_generate" class="button-secondary">生成长微博图片</a>';
-    echo '<img id="txt2img_spinning" src="' . plugin_dir_url(__FILE__) . 'wpspin.gif" alt="生成中……">';
-    echo '<a href="#" id="txt2img_share">转发到新浪微博</a>';
-    echo '</p>';
-    echo '<p><a href="#" id="txt2img_preview" target="_blank">预览长微博图片</a></p>';
+function txt2img_init() {
+    load_plugin_textdomain('t2i', false, dirname(plugin_basename(__FILE__)) . '/lang/');
 }
+add_action('plugins_loaded', 'txt2img_init');
+
+
+function txt2img_custom_box() { ?>
+    <p id="txt2img_buttons">
+        <a href="#" id="txt2img_generate" class="button-secondary"><?php _e('Generate Image', 't2i'); ?></a>
+        <img id="txt2img_spinning" src="<?php echo plugin_dir_url(__FILE__); ?>wpspin.gif" alt="<?php _e('Generating...', 't2i'); ?>">
+        <a href="#" id="txt2img_share"><?php _e('Share Weibo', 't2i'); ?></a>
+    </p>
+    <p>
+        <a href="#" id="txt2img_preview" target="_blank"><?php _e('Preview Image', 't2i'); ?></a>
+    </p>
+<?php }
 function txt2img_add_custom_box() {
     global $post;
     if($post->post_status == 'publish') {
-        add_meta_box('txt2img', '分享长微博', 'txt2img_custom_box', 'post', 'side', 'high');
-        add_meta_box('txt2img', '分享长微博', 'txt2img_custom_box', 'page', 'side', 'high');
+        add_meta_box('txt2img', __('Share Article Image to Weibo', 't2i'), 'txt2img_custom_box', 'post', 'side', 'high');
+        add_meta_box('txt2img', __('Share Article Image to Weibo', 't2i'), 'txt2img_custom_box', 'page', 'side', 'high');
     }
 }
 add_action('adminmenu', 'txt2img_add_custom_box');
 
 
 function txt2img_style() {
-    if(basename($_SERVER['SCRIPT_NAME']) == 'post.php') {
-        echo '<style type="text/css">';
-        echo "@font-face { font-family:'Droid Sans Fallback'; src:local('Droid Sans Fallback'), url('" . plugin_dir_url(__FILE__) . "droid.ttf') format('ttf'); }";
-        echo '#txt2img_buttons { overflow:hidden; line-height:24px; }';
-        echo '#txt2img_generate { float:left; display:inline-block; margin-right:15px; }';
-        echo '#txt2img_spinning { float:left; margin-right:15px; width:16px; height:16px; display:none; }';
-        echo '#txt2img_share { width:106px; height:24px; float:left; font-size:0; text-decoration:none; background:url(' . plugin_dir_url(__FILE__) . 'weibo.png) no-repeat; display:none; }';
-        echo '#txt2img_preview { padding-left: 10px; display:none; }';
-        echo '#txt2img_generater { display:none; }';
-        echo "#txt2img_content { font-family:'Droid Sans Fallback'; font-size:12pt; width:405px; height:450px; overflow-y:scroll; position:absolute; left:-9000px; top:0; z-index:1000; }";
-        echo '<style>';
-    }
+    if(basename($_SERVER['SCRIPT_NAME']) == 'post.php') { ?>
+        <style type="text/css">
+            @font-face { font-family:'Droid Sans Fallback'; src:local('Droid Sans Fallback'), url('<?php echo plugin_dir_url(__FILE__); ?>droid.ttf') format('ttf'); }
+            #txt2img_buttons { overflow:hidden; line-height:24px; }
+            #txt2img_generate { float:left; display:inline-block; margin-right:15px; }
+            #txt2img_spinning { float:left; margin-right:15px; width:16px; height:16px; display:none; }
+            #txt2img_share { width:84px; height:24px; float:left; font-size:12px; text-decoration:none; text-align:center; background:url(<?php echo plugin_dir_url(__FILE__); ?>weibo.png) no-repeat; display:none; color:#fff; padding:0 0 0 22px; line-height:24px; }
+            #txt2img_preview { padding-left: 10px; display:none; }
+            #txt2img_generater { display:none; }
+            #txt2img_content { font-family:'Droid Sans Fallback'; font-size:12pt; width:405px; height:450px; overflow-y:scroll; position:absolute; left:-9000px; top:0; z-index:1000; }
+        </style>
+    <?php }
 }
 add_action('admin_head', 'txt2img_style');
 
@@ -122,7 +130,7 @@ function txt2img_main() {
                 frame.style.zIndex = '999996';
                 frame.style.top = '120px';
                 frame.style.left = (document.documentElement.clientWidth/2 - 250) + 'px';
-                frame.innerHTML = '<img style="display:block;margin:25px auto" src="' + txt2img_preview.href + '" alt="预览长微博" />';
+                frame.innerHTML = '<img style="display:block;margin:25px auto" src="' + txt2img_preview.href + '" alt="<?php _e('Preview Weibo Image', 't2i'); ?>" />';
                 var close = document.createElement('img');
                 close.style.width = '30px';
                 close.style.height = '30px';

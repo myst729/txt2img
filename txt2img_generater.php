@@ -16,7 +16,6 @@ imagettftext($img, 12, 0, 20, 40, $color, $font, $input);
 imagettftext($img, 12, 0, 21, 40, $color, $font, $title[0]);
 imagerectangle($img, 0, 0, imagesx($img) - 1, imagesy($img) - 1, $bdcolor);
 $file = "img/p-" . $pid . ".png";
-@mkdir(dirname(__FILE__) . "/img", 0777, true);
 imagepng($img, $file);
 imagedestroy($img);
 echo 'http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['REQUEST_URI']) . '/' . $file;

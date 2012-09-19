@@ -6,7 +6,7 @@ Plugin URI: http://forcefront.com/txt2img-plugin/
 Tags: txt2img, weibo  
 Requires at least: 2.7.0  
 Tested up to: 3.4.2  
-Stable tag: 1.0.8  
+Stable tag: 1.1.0  
 Author URI: http://forcefront.com/  
 Donate link: http://me.alipay.com/myst  
 License: GPLv2 or later
@@ -59,6 +59,9 @@ If you like this plugin and want to thank its developer, you may consider make a
 
 ###Changelog###
 
+= 1.1.0 (2012-09-20) =
+* 增加多语言支持，已提供英文和简体中文两个语种（求其他语种翻译！）
+
 = 1.0.8 (2012-09-07) =
 * 修正使用可视化编辑器时生成的图片丢失段落间隔行的问题
 
@@ -92,6 +95,9 @@ If you like this plugin and want to thank its developer, you may consider make a
 
 
 ###Upgrade Notice###
+
+= 1.1.0 =
+增加多语言支持，已提供英文和简体中文两个语种（求其他语种翻译！）
 
 = 1.0.8 =
 修正使用可视化编辑器时生成的图片丢失段落间隔行的问题
