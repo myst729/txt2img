@@ -41,7 +41,7 @@ Looking forward to your questions.
 
 If your WordPress is running on a Windows Server, the font file will be locked once you start using this plugin, until the server reboots. This may cause plugin auto-updating fail. The issue couldn't be solved due to Windows system design. Please update it manually, or try a *nix server.
 
-如果您在 Windows 服务器上运行 WordPress，使用本插件会造成字体文件被锁死，直到服务器重启。这将可能造成插件自动更新失败。由于 Windows 系统设计的原因，该问题无法修复，请手动更新该插件，或考虑更换 *nix 架构的服务器。
+如果您在 Windows 服务器上运行 WordPress，使用本插件会造成字体文件被锁死，直到服务器重启。这将可能造成插件自动更新失败。由于 Windows 系统设计的原因，该问题无法修复。请手动更新该插件，或考虑更换 *nix 架构的服务器。
 
 
 ###Donation###
