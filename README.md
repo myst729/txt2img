@@ -46,9 +46,9 @@ If your WordPress is running on a Windows Server, the font file will be locked o
 
 ###Donation###
 
-If you like this plugin and want to thank its developer, you may consider make a donation via [AliPay](https://me.alipay.com/myst).
+If you like this plugin and want to thank its developer, you may consider make a donation via [**AliPay**](https://me.alipay.com/myst).
 
-如果您觉得这个插件还不错，想对开发者表示感谢，可以考虑通过[支付宝个人收款页](https://me.alipay.com/myst)打赏开发者一点儿银子。
+如果您觉得这个插件还不错，想对开发者表示感谢，可以考虑通过 [**支付宝个人收款页**](https://me.alipay.com/myst) 打赏开发者一点儿银子。
 
 
 ###Screenshots###
