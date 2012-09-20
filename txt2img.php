@@ -39,14 +39,57 @@ add_action('adminmenu', 'txt2img_add_custom_box');
 function txt2img_style() {
     if(basename($_SERVER['SCRIPT_NAME']) == 'post.php') { ?>
         <style type="text/css">
-            @font-face { font-family:'Droid Sans Fallback'; src:local('Droid Sans Fallback'), url('<?php echo plugin_dir_url(__FILE__); ?>droid.ttf') format('ttf'); }
-            #txt2img_buttons { overflow:hidden; line-height:24px; }
-            #txt2img_generate { float:left; display:inline-block; margin-right:15px; }
-            #txt2img_spinning { float:left; margin-right:15px; width:16px; height:16px; display:none; }
-            #txt2img_share { width:84px; height:24px; float:left; font-size:12px; text-decoration:none; text-align:center; background:url(<?php echo plugin_dir_url(__FILE__); ?>weibo.png) no-repeat; display:none; color:#fff; padding:0 0 0 22px; line-height:24px; }
-            #txt2img_preview { padding-left: 10px; display:none; }
-            #txt2img_generater { display:none; }
-            #txt2img_content { font-family:'Droid Sans Fallback'; font-size:12pt; width:405px; height:450px; overflow-y:scroll; position:absolute; left:-9000px; top:0; z-index:1000; }
+            @font-face {
+                font-family: 'Droid Sans Fallback';
+                src: local('Droid Sans Fallback'), url('<?php echo plugin_dir_url(__FILE__); ?>droid.ttf') format('ttf');
+            }
+            #txt2img_buttons {
+                line-height: 24px;
+                overflow: hidden;
+            }
+            #txt2img_generate {
+                margin-right: 15px;
+                float: left;
+                display: inline-block;
+            }
+            #txt2img_spinning {
+                width: 16px;
+                height: 16px;
+                margin-right: 15px;
+                float: left;
+                display: none;
+            }
+            #txt2img_share {
+                width: 84px;
+                height: 24px;
+                background: url(<?php echo plugin_dir_url(__FILE__); ?>weibo.png) no-repeat;
+                color: #fff;
+                font-size: 12px;
+                line-height: 24px;
+                text-align: center;
+                text-decoration: none;
+                padding: 0 0 0 22px;
+                float: left;
+                display: none;
+            }
+            #txt2img_preview {
+                padding-left: 10px;
+                display: none;
+            }
+            #txt2img_generater {
+                display: none;
+            }
+            #txt2img_content {
+                width: 405px;
+                height: 450px;
+                font-family: 'Droid Sans Fallback';
+                font-size: 12pt;
+                overflow-y: scroll;
+                position: absolute;
+                left: -9000px;
+                top: 0;
+                z-index: 1000;
+            }
         </style>
     <?php }
 }
