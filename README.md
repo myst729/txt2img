@@ -5,8 +5,8 @@ Contributors: Leo Deng ([@米粽my](http://weibo.com/myst729))
 Plugin URI: http://forcefront.com/txt2img-plugin/  
 Tags: txt2img, weibo  
 Requires at least: 2.7.0  
-Tested up to: 3.4.2  
-Stable tag: 1.1.0  
+Tested up to: 3.5.1  
+Stable tag: 1.1.1  
 Author URI: http://forcefront.com/  
 Donate link: http://me.alipay.com/myst  
 License: GPLv2 or later
@@ -59,8 +59,11 @@ If you like this plugin and want to thank its developer, you may consider make a
 
 ###Changelog###
 
+= 1.1.1 (2013-02-13) =
+* 修正对常见 HTML 转义字符的处理
+
 = 1.1.0 (2012-09-20) =
-* 增加多语言支持，已提供英文和简体中文两个语种（求其他语种翻译！）
+* 增加多语言支持，已提供英文和简体中文两个语种（求其他语种翻译）
 
 = 1.0.8 (2012-09-07) =
 * 修正使用可视化编辑器时生成的图片丢失段落间隔行的问题
@@ -96,11 +99,14 @@ If you like this plugin and want to thank its developer, you may consider make a
 
 ###Upgrade Notice###
 
+= 1.1.1 =
+修正对常见 HTML 转义字符的处理。
+
 = 1.1.0 =
-增加多语言支持，已提供英文和简体中文两个语种（求其他语种翻译！）
+增加多语言支持，已提供英文和简体中文两个语种（求其他语种翻译）。
 
 = 1.0.8 =
-修正使用可视化编辑器时生成的图片丢失段落间隔行的问题
+修正使用可视化编辑器时生成的图片丢失段落间隔行的问题。
 
 = 1.0.7 =
 修正一个 IE 排版丢失换行的问题。增加仿 Fancybox 外观的长微博图片预览功能。

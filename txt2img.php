@@ -3,7 +3,7 @@
 Plugin Name: txt2img (山寨长微博)
 Plugin URI: http://forcefront.com/txt2img-plugin/
 Description: Convert WordPress post/page into image and share on <a href="http://weibo.com/">Weibo</a>. 把 WordPress 文章转发成新浪长微博。
-Version: 1.1.0
+Version: 1.1.1
 Author: Leo Deng (@米粽my)
 Author URI: http://forcefront.com/
 License: GPLv2 or later
@@ -128,7 +128,7 @@ function txt2img_main() {
             var strip_tags = function(input) {
                 return input.replace(/^<p>|<\/p>$/g, '').replace(/<p>|<\/p>/g, "\n").replace(/^\s+|\s+$/g, '').replace(/<!--[\s\S]*?-->|<\?(?:php)?[\s\S]*?\?>/gi, '').replace(/<\/?([a-z][a-z0-9]*)\b[^>]*>/gi, function ($0, $1) {
                     return ''.indexOf('<' + $1.toLowerCase() + '>') > -1 ? $0 : '';
-                }).replace(/\n(\n)+/ig, "\n\n");
+                }).replace(/\n(\n)+/ig, "\n\n").replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&nbsp;/g, " ").replace(/&lt;/g, "<").replace(/&gt;/g, ">");
             };
             var prepare = function(e) {
                 txt2img_content.value = post_title.value + "\n\n" + strip_tags(post_content.value);
