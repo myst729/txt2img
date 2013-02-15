@@ -128,7 +128,7 @@ function txt2img_main() {
             var strip_tags = function(input) {
                 return input.replace(/^<p>|<\/p>$/g, '').replace(/<p>|<\/p>/g, "\n").replace(/^\s+|\s+$/g, '').replace(/<!--[\s\S]*?-->|<\?(?:php)?[\s\S]*?\?>/gi, '').replace(/<\/?([a-z][a-z0-9]*)\b[^>]*>/gi, function ($0, $1) {
                     return ''.indexOf('<' + $1.toLowerCase() + '>') > -1 ? $0 : '';
-                }).replace(/\n(\n)+/ig, "\n\n").replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&nbsp;/g, " ").replace(/&lt;/g, "<").replace(/&gt;/g, ">");
+                }).replace(/\n(\n)+/ig, "\n\n").replace(/\t/ig, "　").replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&nbsp;/g, " ").replace(/&lt;/g, "<").replace(/&gt;/g, ">");
             };
             var prepare = function(e) {
                 txt2img_content.value = post_title.value + "\n\n" + strip_tags(post_content.value);
@@ -137,7 +137,7 @@ function txt2img_main() {
                 txt2img_spinning.style.display = 'inline-block';
                 setTimeout(function() {
                     txt2img_form.submit();
-                }, 100);
+                }, 300);
                 if(e && e.preventDefault) {
                     e.preventDefault();
                 } else {
