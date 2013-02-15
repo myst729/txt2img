@@ -59,7 +59,7 @@ If you like this plugin and want to thank its developer, you may consider make a
 
 ###Changelog###
 
-= 1.1.1 (2013-02-13) =
+= 1.1.1 (2013-02-15) =
 * 修正对常见 HTML 转义字符的处理
 
 = 1.1.0 (2012-09-20) =
