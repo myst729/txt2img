@@ -16,28 +16,22 @@ imagettftext($img, 12, 0, 20, 40, $color, $font, $input);
 imagettftext($img, 12, 0, 21, 40, $color, $font, $title[0]);
 imagerectangle($img, 0, 0, imagesx($img) - 1, imagesy($img) - 1, $bdcolor);
 
-
-if(defined('SAE_TMP_PATH'))
-{
-	//sae. It's not able to write the local file.
-	$file = "p-" . $pid . ".png";
-	$s = new SaeStorage();
-	ob_start(); 
-
-	imagepng($img);
-	$imgstr = ob_get_contents();
-	$s->write('upload',$file,$imgstr);
-	ob_end_clean(); 
-	imagedestroy($img);
-
-	echo $s->getUrl( 'upload' , $file );
-}
-else
-{
-	$file = "img/p-" . $pid . ".png";
-	imagepng($img, $file);
-	imagedestroy($img);
-	echo 'http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['REQUEST_URI']) . '/' . $file;
+if(defined('SAE_TMP_PATH')) {
+  //sae. It's not able to write the local file.
+  $file = "p-" . $pid . ".png";
+  $s = new SaeStorage();
+  ob_start();
+  imagepng($img);
+  $imgstr = ob_get_contents();
+  $s->write('upload',$file,$imgstr);
+  ob_end_clean(); 
+  imagedestroy($img);
+  echo $s->getUrl( 'upload' , $file );
+} else {
+  $file = "img/p-" . $pid . ".png";
+  imagepng($img, $file);
+  imagedestroy($img);
+  echo 'http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['REQUEST_URI']) . '/' . $file;
 }
 
 ?>

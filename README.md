@@ -6,7 +6,7 @@ Plugin URI: http://forcefront.com/txt2img-plugin/
 Tags: txt2img, weibo  
 Requires at least: 2.7.0  
 Tested up to: 3.5.1  
-Stable tag: 1.1.1.1  
+Stable tag: 1.2.0
 Author URI: http://forcefront.com/  
 Donate link: http://me.alipay.com/myst  
 License: GPLv2 or later
@@ -59,6 +59,9 @@ If you like this plugin and want to thank its developer, you may consider make a
 
 ###Changelog###
 
+= 1.2.0 (2013-04-14) =
+* 增加对 SAE 的支持（感谢 @pkuxkxjason 的 pull request）
+
 = 1.1.1.1 (2013-04-11) =
 * 作者修改了 weibo 昵称~
 
@@ -101,6 +104,9 @@ If you like this plugin and want to thank its developer, you may consider make a
 
 
 ###Upgrade Notice###
+
+= 1.2.0 =
+增加对 SAE 的支持。
 
 = 1.1.1.1 =
 作者修改了 weibo 昵称~
