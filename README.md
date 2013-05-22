@@ -1,7 +1,7 @@
 txt2img (山寨长微博)
 ====================
 
-Contributors: Leo Deng ([@米粽my](http://weibo.com/myst729))  
+Contributors: Leo Deng ([@米粽粽](http://weibo.com/myst729))  
 Plugin URI: http://forcefront.com/txt2img-plugin/  
 Tags: txt2img, weibo  
 Requires at least: 2.7.0  
