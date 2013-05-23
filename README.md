@@ -53,8 +53,8 @@ If you like this plugin and want to thank its developer, you may consider make a
 
 ###Screenshots###
 
-1. Share to weibo while editing published post/page.
-2. Preview the image generated from the post.
+1. Share to weibo while editing published post/page. 在编辑界面分享图片长微博。
+2. Preview the image generated from the post. 预览生成的长微博图片。
 
 
 ###Changelog###
@@ -101,45 +101,4 @@ If you like this plugin and want to thank its developer, you may consider make a
 
 = 1.0.0 (2012-02-14) =
 * 发布第一个版本
-
-
-###Upgrade Notice###
-
-= 1.2.0 =  
-增加对 SAE 的支持。
-
-= 1.1.1.1 =  
-作者修改了 weibo 昵称~
-
-= 1.1.1 =  
-修正对常见 HTML 转义字符的处理。
-
-= 1.1.0 =  
-增加多语言支持，已提供英文和简体中文两个语种（求其他语种翻译）。
-
-= 1.0.8 =  
-修正使用可视化编辑器时生成的图片丢失段落间隔行的问题。
-
-= 1.0.7 =  
-修正一个 IE 排版丢失换行的问题。增加仿 Fancybox 外观的长微博图片预览功能。
-
-= 1.0.6 =  
-增加发布前预览长微博图片的功能。
-
-= 1.0.5 =  
-改进对文章内容多个连续空行的处理。
-
-= 1.0.4 =  
-在图片长微博底部为水印留出位置。
-
-= 1.0.3 =  
-修改微博文字中附加的工具信息。
-
-= 1.0.2 =  
-修正固定链接（permalink）过长时页面 URL 错误的问题。
-
-= 1.0.1 =  
-修正制表符（\t）的排版问题。文章标题加粗显示。增加页面（page）转换长微博的支持。
-
-= 1.0.0 =  
-在 WordPress 中方便的转发排版良好的长微博。
+* 在 WordPress 中方便的转发排版良好的长微博
