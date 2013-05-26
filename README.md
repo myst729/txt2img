@@ -60,7 +60,7 @@ If you like this plugin and want to thank its developer, you may consider make a
 ###Changelog###
 
 = 1.2.0 (2013-04-14) =
-* 增加对 SAE 的支持（感谢 @pkuxkxjason 的 pull request）
+* 增加对 SAE 的支持（感谢 [@pkuxkxjason](http://weibo.com/pkuxkxjason) 的 pull request）
 
 = 1.1.1.1 (2013-04-11) =
 * 作者修改了 weibo 昵称~
