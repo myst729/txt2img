@@ -8,7 +8,7 @@ Requires at least: 2.7.0
 Tested up to: 3.5.1  
 Stable tag: 1.2.0  
 Author URI: http://forcefront.com/  
-Donate link: http://me.alipay.com/myst  
+Donate link: http://forcefront.com/macbook-pro-donation/  
 License: GPLv2 or later
 
 Convert WordPress post/page into image and share on Weibo.
@@ -46,10 +46,10 @@ If your WordPress is running on a Windows Server, the font file will be locked o
 
 ###Donation###
 
-If you like this plugin and want to thank its developer, you may consider make a donation via [**AliPay**](https://me.alipay.com/myst).
+If you like this plugin and want to thank its developer, you may consider [**donation**](http://forcefront.com/macbook-pro-donation/).
 
-如果您觉得这个插件还不错，想对开发者表示感谢，可以考虑通过 [**支付宝个人收款页**](https://me.alipay.com/myst) 打赏开发者一点儿银子。  
-[![I want a Macbook Pro!](https://img.alipay.com/sys/personalprod/style/mc/btn-index.png)](https://me.alipay.com/myst)
+如果您觉得这个插件还不错，想对开发者表示感谢，可以考虑[**打赏开发者一点儿银子**](http://forcefront.com/macbook-pro-donation/)。  
+[![I want a Macbook Pro!](http://forcefront.com/wp-content/uploads/2014/07/alipay.png)](http://forcefront.com/macbook-pro-donation/)
 
 
 ###Screenshots###
