@@ -54,8 +54,11 @@ If you like this plugin and want to thank its developer, you may consider [**don
 
 ###Screenshots###
 
-1. Share to weibo while editing published post/page. 在编辑界面分享图片长微博。
-2. Preview the image generated from the post. 预览生成的长微博图片。
+1. Share to weibo while editing published post/page. 在编辑界面分享图片长微博。  
+![Generate Image Weibo](https://raw.githubusercontent.com/myst729/txt2img/master/screenshot-1.png)
+
+2. Preview the image generated from the post. 预览生成的长微博图片。  
+![Preview Image Weibo](https://raw.githubusercontent.com/myst729/txt2img/master/screenshot-2.png)
 
 
 ###Changelog###
