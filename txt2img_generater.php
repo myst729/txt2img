@@ -3,7 +3,7 @@
 $font = "droid.ttf";
 $pid = $_POST['txt2img_pid'];
 $content = $_POST['txt2img_content'];
-$input = str_replace("\r", "", stripcslashes($content)) . "\n" . str_repeat('-', 65) . "\n" . "山寨长微博插件 http://forcefront.com/txt2img-plugin/" . "\n \n \n";
+$input = str_replace("\r", "", stripcslashes($content)) . "\n" . str_repeat('-', 65) . "\n" . "山寨长微博插件 https://github.com/myst729/txt2img" . "\n \n \n";
 $title = explode("\n\n", $input);
 $ary = imagettfbbox (12, 0, $font, $input);
 $width = abs($ary[2] - $ary[0]) + 40;
@@ -17,7 +17,7 @@ imagettftext($img, 12, 0, 21, 40, $color, $font, $title[0]);
 imagerectangle($img, 0, 0, imagesx($img) - 1, imagesy($img) - 1, $bdcolor);
 
 if(defined('SAE_TMP_PATH')) {
-  //sae. It's not able to write the local file.
+  //SAE is not able to write local file.
   $file = "p-" . $pid . ".png";
   $s = new SaeStorage();
   ob_start();
